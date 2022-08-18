@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li,
+a,
+img,
+p,
+h1,
+h2,
+h3,
+h4.h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px 0px;
+}
+
+.input_control::placeholder {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+:root {
+    --primaryColor: #fff;
+    --subColor: #5f5753;
+    --mainColor: #ae0a46;
+    --lastColor: #7e0733;
+    --topHover: #6f062d;
+    --navColor: #3e332d;
+}
