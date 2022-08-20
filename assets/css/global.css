@@ -31,7 +31,7 @@ ul {
     max-width: 1230px;
     width: 100%;
     margin: 0px auto;
-    padding: 15px 0px;
+    padding: 0px 15px;
 }
 
 .input_control::placeholder {

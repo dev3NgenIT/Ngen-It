@@ -1,9 +1,14 @@
-var navToggoler = document.querySelector(".nav_toogler")
-var subNav = document.querySelector(".sub_nav")
+var navToggoler = document.querySelectorAll(".nav_toogler")
+var subNav = document.querySelectorAll(".sub_nav")
 
-nav_toogler.onclick = () => {
-    subNav.classList.toggle("active")
-}
+navToggoler.forEach(toggoler => {
+    toggoler.addEventListener("click", function() {
+        navToggoler.forEach(subNav => subNav.classList.toggle("active"))
+            // this.classList.add("active")
+    })
+});
+
+
 
 $('.banner_slider').slick({
     dots: true,
