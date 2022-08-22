@@ -27,17 +27,18 @@
     position: absolute;
     top: 50%;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     cursor: pointer;
-    color: transparent;
+    background: #FFFFFF !important;
+    box-shadow: 0px 0px 5px #00000012;
+    border-radius: 50%;
     border: none;
-    outline: none;
-    background: transparent;
+    z-index: 999;
 }
 
 .slick-prev:hover,
@@ -72,8 +73,13 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
+
 .slick-prev {
-    left: 0px;
+    left: -1%;
 }
 
 [dir='rtl'] .slick-prev {
@@ -82,15 +88,17 @@
 }
 
 .slick-prev:before {
-    content: '←';
+    font-family: "Font Awesome 5 Free";
+    content: "\f104";
+    font-weight: 700;
 }
 
 [dir='rtl'] .slick-prev:before {
-    content: '→';
+    content: '';
 }
 
 .slick-next {
-    right: 0;
+    right: -1%;
 }
 
 [dir='rtl'] .slick-next {
@@ -99,7 +107,9 @@
 }
 
 .slick-next:before {
-    content: '→';
+    content: '\f105';
+    font-family: "font awesome 5 free";
+    font-weight: 700;
 }
 
 [dir='rtl'] .slick-next:before {

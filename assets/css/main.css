@@ -1,3 +1,9 @@
+/* 
+======================
+ header section start
+======================
+*/
+
 .header_section {
     position: relative;
     z-index: 1;
@@ -426,6 +432,13 @@ li.nav_toogler.active .sub_nav {
 }
 
 
+/* 
+======================
+ header section start
+======================
+*/
+
+
 /* banner start */
 
 .banner_slider {}
@@ -446,172 +459,351 @@ li.nav_toogler.active .sub_nav {
 ===============================
 */
 
-.banner_single_page {}
-
-.banner_image_single_page {
-    height: 420px;
+.banner_single_page {
+    background: url(../image/single\ page/banner/microsoft-surface-fall-2019-lineup-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
 }
 
-.banner_image_single_page img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.single_banner_content {
+    max-width: 700px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.single_banner_image img {
+    max-width: 100%;
     display: block;
+}
+
+.single_banner_heading {
+    font-size: 60px;
+    color: var(--primaryColor);
+    line-height: 75px;
+    margin-bottom: 10px;
+    font-weight: 100;
 }
 
 .product_descreption {
     background-color: #f2f5f7;
     position: relative;
+    margin-top: 50px;
 }
 
-.product_descreption_content {
-    margin-right: 50px;
-    padding: 80px;
-}
-
-.product_descreption_title {
-    font-size: 34px;
-    color: var(--navColor);
-    font-weight: 500;
-    line-height: 34px;
-    display: inline-block;
-    position: relative;
-}
-
-.product_descreption_text {
+.single_banner_text {
+    color: var(--primaryColor);
     font-size: 18px;
     line-height: 26px;
-    color: var(--subColor);
-    margin: 30px 0px;
+    margin-bottom: 10px;
+    font-weight: 300;
 }
 
-.product_descreption_btn {
+.single_buttton_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.single_banner_button {
+    padding: 20px 40px;
     display: inline-block;
     color: var(--primaryColor);
-    text-transform: uppercase;
-    padding: 10px 25px;
-    font-weight: 500;
-    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--mainColor);
+    border-radius: 2px;
     transition: all linear 0.3s;
-    background-color: var(--mainColor);
-    border-radius: 30px;
 }
 
-.product_descreption_btn:hover {
+.single_banner_button:hover {
     background-color: var(--lastColor);
     color: var(--primaryColor);
 }
 
-.product_descreption_image {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 40%;
-    height: 100%;
-    display: flex;
+.single_banner_button2 {
+    background-color: var(--primaryColor);
+    border: 1px solid #5f5753;
+    color: var(--mainColor);
 }
 
-.product_descreption_image img {
+.single_banner_button2:hover {
+    color: var(--primaryColor);
+    background-color: var(--subColor);
+}
+
+
+/* populer product */
+
+.product_item {
+    padding: 15px;
+    transition: all linear 0.3s;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 5%);
+    margin: 0px 10px;
+}
+
+
+/* .product_item:hover {
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 5%);
+} */
+
+.product_item_thumbnail {
     width: 100%;
-    display: block;
-    object-fit: fill;
+    max-width: 150px;
+    height: auto;
+    max-height: 120px;
+    margin: 0px auto;
+    margin-bottom: 10px;
 }
 
-
-/* item */
-
-.singlepage_latest_product {
-    padding: 50px 0px;
-}
-
-.singlepage_latest_product_content {}
-
-.section_title {
-    font-size: 24px;
-    color: var(--navColor);
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.section_title::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 30px;
-    background-color: var(--mainColor);
-    left: 0px;
-    bottom: -20px;
-}
-
-.singlepage_latest_product_wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 25px;
-}
-
-.single_product_item {
-    padding: 10px;
-    border: 1px solid #0000000f;
-    cursor: context-menu;
-}
-
-.single_product_item:hover {
-    box-shadow: 0px 0px 10px #00000017;
-}
-
-.single_product_item_thumbnail {
-    margin-bottom: 15px;
-}
-
-.single_product_item_thumbnail img {
+.product_item_thumbnail img {
     width: 100%;
     display: block;
     object-fit: cover;
 }
 
-.single_product_item_content {
-    padding: 20px 0px;
+.product_item_content {
+    text-align: center;
 }
 
-.single_product_item_content a {
+.product_item_content_name {
+    margin-bottom: 10px;
     color: var(--mainColor);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
-.single_product_price {
-    font-size: 18px;
-    font-weight: 500;
+.product_item_content_name:hover {
+    color: var(--lastColor);
+}
+
+.product_item_price {
+    margin-bottom: 10px;
+}
+
+.price_currency {
+    font-size: 14px;
     color: var(--subColor);
 }
 
-.top_brand_section {
-    padding-bottom: 50px;
+.price_currency_value {
+    color: #3e332d;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.top_brand_wrapper {
+.product_button {
+    display: inline-block;
+    padding: 18px 36px;
+    background-color: #fff;
+    color: #ae0a46;
+    border: 2px solid;
+    border-color: #5f5753;
+    font-size: 14px;
+    line-height: 15px;
+    transition: all linear 0.3s;
+}
+
+.product_button:hover {
+    background-color: var(--subColor);
+    color: var(--primaryColor);
+}
+
+
+/* popular product end*/
+
+
+/* Product veiw details  */
+
+.product_veiw_details_wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
-.top_brand_item {
-    padding: 15px 20px;
-    background: #fff;
+.product_veiw_details_item {
     text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 7px 34px rgb(15 98 122 / 10%);
-    border-radius: 8px;
 }
 
-.top_brand_item img {
+.product_veiw_details_item_image img {
+    max-width: 100%;
+    display: block;
+    margin: 0px auto;
+}
+
+.product_veiw_details_item_content p {
+    font-size: 21px;
+    color: var(--heading);
+    font-weight: 300;
+}
+
+
+/* Product veiw details end */
+
+
+/* solution feature */
+
+.solution_feature {
+    padding: 80px;
+    background-color: var(--bgColor);
+}
+
+.solution_feature_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.solution_feature_content {
+    width: 45%;
+}
+
+.solution_feature_content {}
+
+.solution_feature_title {
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--heading);
+    margin-bottom: 14px;
+    font-weight: 100;
+}
+
+.solution_feature_text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.solution_feature_text a {
+    color: var(--mainColor);
+}
+
+.solution_feature_image {
+    width: 45%;
+}
+
+.solution_feature_image img {
+    width: 100%;
     display: block;
     object-fit: cover;
-    height: 100px;
+}
+
+.solution_feature2 {
+    background-color: transparent;
+}
+
+.solution_feature_wrapper2 {
+    flex-direction: row-reverse;
+}
+
+
+/* solution feature end */
+
+
+/* industry */
+
+.industry_section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.industry_section_item {
+    border-style: solid;
+    border-width: thin;
+    border-color: #d4d0ca;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+.industry_section_item_thumbnail {
+    margin-bottom: 10px;
+}
+
+.industry_section_item_thumbnail img {
+    max-width: 100%;
+    display: block;
+    margin: 0px auto;
+}
+
+.industry_item_content_name {
+    font-size: 20px;
+    margin: 4px 0px;
+}
+
+.industry_item_content_text {
+    font-size: 21px;
+    color: var(--heading);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.industry_content_btn {
+    display: inline-block;
+    color: var(--mainColor);
+    font-weight: 300;
+}
+
+.industry_content_btn:hover {
+    color: var(--topHover);
+}
+
+
+/* industry end */
+
+
+/* feature content */
+
+.feature_content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.feature_content_item {
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+
+.feature_content_item:hover {
+    transform: translateY(-8px);
+}
+
+.feature_content_item_content {
+    padding: 2px 5px 20px;
+}
+
+.feature_content_item_thumbnail img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.feature_content_item_name {
+    font-size: 14px;
+    display: block;
+    color: var(--topHover);
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.feature_content_item_text {
+    font-size: 16px;
+    color: var(--heading);
+    line-height: 24px;
 }
 
 
