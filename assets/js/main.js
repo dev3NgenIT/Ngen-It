@@ -8,6 +8,11 @@ navToggoler.forEach(toggoler => {
     })
 });
 
+var subNabToggle = document.querySelectorAll(".nav_toogler")
+var subNavSub = document.querySelectorAll(".sub_nav")
+
+
+
 
 
 $('.banner_slider').slick({
@@ -16,7 +21,7 @@ $('.banner_slider').slick({
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    arrows: true,
+    arrows: false,
     autoplay: true
 });
 

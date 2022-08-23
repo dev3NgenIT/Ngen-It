@@ -78,6 +78,25 @@ ul {
 }
 
 
+/* mobile nav */
+
+.mobile_toggoler {
+    display: block;
+}
+
+.mobile_toggoler ul {}
+
+.mobile_toggoler ul li {
+    background-color: var(--navColor);
+    height: 2px;
+    margin: 4px 0px;
+    width: 20px;
+}
+
+
+/* mobile nav end*/
+
+
 /* 
 ======================
  footer section start
@@ -108,15 +127,11 @@ ul {
 
 .main_footer_wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
 }
 
 .main_footer_item {}
-
-.main_footer_item:not(:first-child) {
-    padding-left: 48px;
-}
 
 .main_footer_item_title {
     font-size: 16px;
@@ -208,14 +223,23 @@ ul {
 
 .footer_bottom_wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+}
+
+.footer_copy {
+    width: 65px;
+}
+
+.footer_bottom_list {
+    width: calc(100% - 65px);
 }
 
 .footer_bottom_list ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -223,6 +247,7 @@ ul {
     font-size: 14px;
     color: var(--bgColor);
     display: inline-block;
+    text-align: center;
 }
 
 
